@@ -9,7 +9,7 @@ Then we would have:
 `input_str = "530 070 000 600 195 000 098 000 060 800 060 003 400 803 001 700 020 006 060 000 280 000 419 005 000 080 079"`  
 Then to run the program, we would run on the command line:  
 `python solve.py [input_str]`  
-For example, if we run using this using the input string above, we get the following output:  
+For example, if we run this using the input string above, we get the following output:  
 ```
 1 solutions found
 
