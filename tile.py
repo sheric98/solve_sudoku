@@ -30,7 +30,7 @@ class Tile:
         self.groups.append(group)
 
     def get_possible(self):
-        self.possible = set.intersection(*[g.missing for g in self.groups], self.mc_nums, self.possible)
+        self.possible = set.intersection(*([g.missing for g in self.groups] + [self.mc_nums, self.possible]))
         return len(self.possible)
 
     def update_mc(self, mc_nums):

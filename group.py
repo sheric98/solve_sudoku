@@ -22,7 +22,7 @@ class Group:
             self.idx = idx
             self.must_contain = []
             for i in range(9):
-                self.must_contain.append(MustContain(idxs.copy(), i + 1))
+                self.must_contain.append(MustContain(idxs[:], i + 1))
             self.idxs_mc = {tuple(idxs): set(self.must_contain)}
         else:
             self.missing = group.missing.copy()
